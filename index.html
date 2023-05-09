@@ -1,48 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Mi Currículum</title>
-</head>
-<body>
-  <header>
+<html>
+  <head>
+    <title>Mi Currículum</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="./img/icon.png" type="icono">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
     <nav>
       <ul>
-        <li><a href="#quien-soy">Qui sóc?</a></li>
-        <li><a href="#estudios">Estudis</a></li>
-        <li><a href="#experiencia">Experiència</a></li>
+        <li><a href="#"><i class="fas fa-globe"></i></a></li> <!-- Icono de la bola del mundo -->
+        <div class="right-icons">
+          <li><a href="#quien-soy"><i class="fas fa-user"></i></a></li>
+          <li><a href="#estudios"><i class="fas fa-graduation-cap"></i></a></li>
+          <li><a href="#experiencia"><i class="fas fa-briefcase"></i></a></li>
+        </div>
       </ul>
     </nav>
-  </header>
-
-  <main>
     <section id="quien-soy">
-      <h2>Quien soy?</h2>
-      <!-- Tus datos personales y descripción aquí -->
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_video_id" frameborder="0" allowfullscreen></iframe>
+      <div class="title">
+        <h1>Quien soy:</h1>
+      </div>
+      <div class="content-wrapper">
+        <div class="text">
+          <p>Me presento, soy Jordi, tengo 18 años, vivo en L'Hospitalet del Llobregat, soy estudiante del centro escolar JoanXIII.</p>
+          <p>Aficiones:
+            Me gusta quedar con mis amigos y pasar un buen rato juntos. Salir de fiesta y quedar una tarde para hablar tamando un cafe.
+            Valoro mucho el tiempo que paso con mi familia. Disfruto de hacer cosas juntos, como salir a la calle, tener comidas en familia, ver películas o simplemente hablar.
+            Cuando tengo tiempo libre, me encanta jugar videojuegos. 
+          </p>
+        </div>
+        <div class="image">
+            <img src="./img/Jordi.jpeg" alt="Jordi">
+        </div>          
       </div>
     </section>
-
     <section id="estudios">
-      <h2>Estudios</h2>
-      <!-- Tus estudios y mapa de Google aquí -->
-      <div class="map-container">
-        <iframe src="https://maps.google.com/maps?q=centro%20Joan%20XXIII&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="title">
+        <h1>Estudios:</h1>
       </div>
+      <div class="content-wrapper">
+        <div class="text">
+          <p>
+            [2016] - [2020] ESO - Joan XIII <br>
+            [2021] - [2022] SMX1 - Joan XIII <br>
+            [2022] - [2023] SMX2 - Joan XIII
+          </p>
+          <p>El centro de estudios Joan XIII, ubicado en el distrito de Bellvitge de la ciudad de L'Hospitalet de Llobregat en Cataluña, España, es coeducativo y ofrece educación desde parvulario hasta secundaria, incluyendo cursos profesionales y de oficios. Ha estado administrado por la Compañía de Jesús desde su fundación en 1968.</p>
+          <iframe src="https://www.google.es/maps/place/Centro+de+Estudios+Joan+XXIII/@41.3498965,2.0882428,15z/data=!4m10!1m2!2m1!1sjoan+XIII!3m6!1s0x12a498d64bd023fd:0x26089fc39cb352a3!8m2!3d41.3498965!4d2.1072972!15sCgpqb2FuIFhYSUlJkgEQZWR1Y2F0aW9uX2NlbnRlcuABAA!16s%2Fg%2F11c2pbk10k?hl=es" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
-
     <section id="experiencia">
-      <h2>Experiència</h2>
-      <!-- Tus experiencias laborales aquí -->
-    </section>
-  </main>
-
-  <footer>
-    <!-- Contenido del footer aquí -->
-  </footer>
-</body>
-</html>
+      <div class="title">
+        <h1>Información Laboral:</h1>
+      </div>
+      <div class="content-wrapper">
+        <div class="text">
+          <h1>Formación Laboral</h1>
+            <p>Actualmente estoy cursando SMX2, un grado de informática donde tratamos sobre los sistemas operativos y las redes multiservicio.
+              He estado haciendo las practicas en una empresa de impresión 3D de la cual he estado de encargado de la zona de envíos y de la producción, sobre todo lo que hacia era encargarme de las maquinas y hacer los envíos a las compañías que trabajábamos (Amazon, Vichi Catalá, etc...). Una vez haber completado las practicas me dieron una recomendación gracias al trabajo que hice. Después me llamaron para encargarme de la producción en el verano. 
+              También he tenido experiencia laboral en un campus de verano de un club llamado RCLH (Rugby Club L'Hospitalet), estuve 3 meses haciendo de monitor de niños. Fue una experiencia bastante bonita.</p>
+          </div>
+          <div class="text">
+            <h1>Experiencia Laboral</h1>
+            <p> Mi experiencia laboral ha sido estar trabajando en una empresa de impresiones 3D durante varios meses siendo el encargado de envíos y de taller. También tengo experiencia laboral siendo monitor de niños, habiendo trabajado tres meses de verano en un campus.</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>
+          <i class="fas fa-envelope"></i> sorribes05@gmail.com <br>
+          <i class="fas fa-phone"></i> +34 123 456 789 <br>
+          <i class="fas fa-map-marker-alt"></i> L'Hospitalet del Llobregat
+        </p>
+      </footer>
+    </body>
+  </html>
+  

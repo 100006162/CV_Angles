@@ -52,24 +52,46 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-#quien-soy .content-wrapper {
+.content-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-#quien-soy .text {
-  width: 65%; /* Ancho del div de texto */
-  padding: 10px;
+.text {
+  width: 50%; /* Ancho del div de texto */
+}
+.mapa {
+  width: 50%;
+}
+#quien-soy .text p {
+  font-size: 2rem;
+  margin-left: 5%;
 }
 
 #quien-soy .image {
-  width: 30%; /* Ancho del div de imagen */
+  width: 50%; /* Ancho del div de imagen */
+  display: flex;
+  justify-content: center;
 }
 
 #quien-soy .image img {
   max-width: 40%; /* Asegura que la imagen no sobrepase el tamaño de su contenedor */
   height: auto;
   border: 1px solid black;
+}
+#estudios .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#estudios .content-wrapper .text {
+  width: 50%;
+}
+#estudios .content-wrapper .mapa {
+  width: 50%;
 }
 
 h1 {

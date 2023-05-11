@@ -110,7 +110,7 @@ nav ul li a {
   width: 50%;
 }
 
-#quien-soy .text p {
+#quien-soy .text p, #experiencia .text p {
   font-size: 2rem;
   margin-left: 5%;
 }
@@ -138,11 +138,16 @@ nav ul li a {
   width: 50%;
 }
 
-#experiencia .text h1, #experiencia .text h1 {
+#experiencia .text h1 {
   font-size: 2rem;
   margin-top: 1rem;
-  margin-left: 50px;
+  margin-left: 100px;
   text-decoration: underline;
+}
+
+#experiencia .text {
+  width: 100%; /* Ancho del div de texto */
+  margin-right: 100px;
 }
 
 h1 {
@@ -226,3 +231,52 @@ footer .flag-button {
 footer .flag-image {
   width: 70px; /* Ajusta el tamaño de la bandera */
 }
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #quien-soy .text h2, #estudios .text h2, #experiencia .text h1 {
+    text-align: center;
+  }
+
+  #quien-soy .image img {
+    max-width: 90%; /* Aumenta el tamaño de la imagen */
+    margin-left: 250px;
+  }
+
+  #estudios .text .timeline-text {
+    font-size: 1.5rem; /* Reducir tamaño de fuente */
+    text-align: center; /* Centrar texto */
+  }
+
+  #estudios .content-wrapper .mapa iframe, #estudios .content-wrapper .mapa p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #experiencia .text p {
+    font-size: 1.5rem; /* Reducir tamaño de fuente */
+  }
+
+  #mas-contenido .video iframe {
+    width: 100%; /* Aumenta el tamaño del video */
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text, .image, .video, .download, .mapa {
+    width: 100%;
+  }
+
+  footer .contact-info {
+    flex-direction: column;
+  }
+}
+
+
+

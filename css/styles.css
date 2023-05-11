@@ -173,7 +173,7 @@ h1 {
 }
 
 #mas-contenido .video {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center; /* Para centrar el video */
 }
@@ -218,6 +218,7 @@ footer .text {
   text-align: center;
 }
 
+
 footer .text p {
   font-size: 20px;
   margin: 0 10px;
@@ -239,6 +240,7 @@ footer .flag-image {
 
   #quien-soy .text h2, #estudios .text h2, #experiencia .text h1 {
     text-align: center;
+    margin-left: 0;
   }
 
   #quien-soy .image img {
@@ -250,7 +252,6 @@ footer .flag-image {
     font-size: 1.5rem; /* Reducir tamaño de fuente */
     text-align: center; /* Centrar texto */
   }
-
   #estudios .content-wrapper .mapa iframe, #estudios .content-wrapper .mapa p {
     margin-left: auto;
     margin-right: auto;
@@ -267,14 +268,35 @@ footer .flag-image {
 
   .content-wrapper {
     flex-direction: column;
-  }
-
-  .text, .image, .video, .download, .mapa {
     width: 100%;
   }
-
+  #estudios .content-wrapper .text {
+    width: 100%;
+    text-align: center;
+  }
+  #estudios .content-wrapper .timeline-text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  #estudios .content-wrapper .timeline-text p {
+    text-align: center;
+  }
+  #estudios .content-wrapper .mapa {
+    width: 100%;
+  }
+  .text, .image, .video, .download, .mapa {
+    width: 100%;
+    margin-left: 0;
+  }
+  
   footer .contact-info {
     flex-direction: column;
+  }
+  #mas-contenido .download {
+    width: 100%
   }
 }
 
